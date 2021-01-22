@@ -25,6 +25,7 @@ RUN apk add --no-cache \
     libjpeg-turbo-dev \
     libpng-dev \
     libzip-dev \
+    libxml2-dev \
     make \
     mysql-client \
     nodejs \
@@ -68,7 +69,8 @@ RUN docker-php-ext-install \
     pcntl \
     tokenizer \
     xml \
-    zip
+    zip \
+    soap
 
 # Install composer
 ENV COMPOSER_HOME /composer
